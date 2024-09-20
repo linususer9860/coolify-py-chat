@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y curl && \
     curl https://ollama.ai/install.sh | sh
 
 # Make port 8000 available to the world outside this container
-EXPOSE 8000
+EXPOSE 3000
 
 # Run app.py when the container launches
 CMD ["chainlit", "run", "app.py", "--port", "8000"]
